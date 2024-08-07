@@ -2,18 +2,22 @@
   --color-light: #cacde0;
   --color-dark: #2f3250;
 }
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 
-.container {
-  width: 1220px;
+.page {
+  min-width: 1440px;
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 1;
   font-weight: 500;
-  padding: 30px 110px 0 110px;
+  background-repeat: no-repeat;
+  background-image: url('img/banner.jpg');
+  background-size: 100% 800px;
+  margin: 0;
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -21,6 +25,7 @@ body {
   grid-template-columns: auto 1fr auto;
   gap: 65px;
   align-items: center;
+  padding: 30px 110px 0 110px;
 }
 
 .logo__icon {
@@ -152,20 +157,6 @@ body {
   padding-top: 2px;
   top: 33px;
   left: 1302px;
-}
-
-.banner {
-  max-width: 1220px;
-}
-
-.banner::before {
-  position: absolute;
-  content: '';
-  width: 1440px;
-  height: 800px;
-  background-image: url(img/banner.jpg);
-  top: 0;
-  z-index: -1;
 }
 
 .banner--article::before {
