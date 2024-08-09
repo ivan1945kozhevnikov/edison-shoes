@@ -3,19 +3,9 @@
   --color-dark: #2f3250;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .page {
   min-width: 1440px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 1;
   font-weight: 500;
@@ -27,12 +17,16 @@
   margin: 0 auto;
 }
 
+.container__header {
+  padding: 30px 0 0;
+  margin-bottom: 173px;
+}
+
 .navigation {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 65px;
   align-items: center;
-  padding: 30px 110px 0 110px;
 }
 
 .logo__icon {
@@ -166,11 +160,11 @@
   left: 1302px;
 }
 
-.banner {
+.promo {
   width: 1220px;
 }
 
-.banner::before {
+.promo::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -183,7 +177,7 @@
   z-index: -1;
 }
 
-.banner--article::before {
+.promo--article::before {
   position: absolute;
   content: '';
   width: 1440px;
@@ -193,49 +187,45 @@
   z-index: -1;
 }
 
-.banner__title {
+.promo__title {
   width: 550px;
-  font-family: 'Prosto One', sans-serif;
+  font-family: 'Prosto One', 'Arial', sans-serif;
   font-size: 76px;
   line-height: 1;
   font-weight: 400;
   color: #4a5fcf;
-  margin: 173px 0 0 110px;
+  margin: 0 0 20px;
 }
 
-.banner__title--size {
+/* .promo__title--size {
   width: 700px;
   line-height: 1.1;
   text-align: center;
-  margin: 110px 0 0 370px;
-}
+} 
 
-.banner__title--light {
+.promo__title--light {
   color: #fcfcfc;
-}
+} */
 
-.banner__description {
+.promo__description {
   width: 550px;
-  font-family: 'Manrope', sans-serif;
   font-size: 22px;
   line-height: 1.4;
   font-weight: 400;
   color: var(--color-dark);
-  margin: 20px 0 0 110px;
+  margin: 0 0 55px;
 }
 
-.banner__description--size {
+/* .promo__description--size {
   width: 470px;
-  margin: 20px 0 0 487px;
 }
 
-.banner__description--light {
+.promo__description--light {
   color: #cacde0;
-}
+} */
 
 .button {
   display: inline-block;
-  font-family: 'Manrope', sans-serif;
   line-height: 1;
   font-weight: 500;
   text-decoration: none;
@@ -261,6 +251,5 @@
 
 .button--large {
   font-size: 16px;
-  margin: 55px 0 0 110px;
   padding: 20px 34px;
 }
